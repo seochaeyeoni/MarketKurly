@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_home"
+        android:icon="@drawable/home_unselected"
+        android:enabled="true"
+        android:title="@string/bottom_menu_1" />
+    <item
+        android:id="@+id/main_recommend"
+        android:icon="@drawable/recommend_unselected"
+        android:enabled="true"
+        android:title="@string/bottom_menu_2" />
+    <item
+        android:id="@+id/main_category"
+        android:icon="@drawable/category_unselected"
+        android:enabled="true"
+        android:title="@string/bottom_menu_3" />
+    <item
+        android:id="@+id/main_search"
+        android:icon="@drawable/search_unselected"
+        android:enabled="true"
+        android:title="@string/bottom_menu_4" />
+    <item
+        android:id="@+id/main_my_kurly"
+        android:icon="@drawable/mykurly_unselected"
+        android:enabled="true"
+        android:title="@string/bottom_menu_5" />
+</menu>

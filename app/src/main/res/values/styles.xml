@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="MainFontL" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/rixgol</item>
+    </style>
+    <style name="MainFontM" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/rixgom</item>
+    </style>
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/rixgom</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="toolbar_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/rixgom</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+</resources>

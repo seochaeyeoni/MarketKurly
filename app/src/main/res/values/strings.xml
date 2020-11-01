@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MarketKurly</string>
+    <string name="loading">로딩중입니다</string>
+    <string name="network_error">네트워크 연결 실패</string>
+    <string name="bottom_menu_1">홈</string>
+    <string name="bottom_menu_2">추천</string>
+    <string name="bottom_menu_3">카테고리</string>
+    <string name="bottom_menu_4">검색</string>
+    <string name="bottom_menu_5">마이컬리</string>
+    <string name="home_tab_menu_1">컬리추천</string>
+    <string name="home_tab_menu_2">신상품</string>
+    <string name="home_tab_menu_3">베스트</string>
+    <string name="home_tab_menu_4">알뜰쇼핑</string>
+    <string name="home_tab_menu_5">이벤트</string>
+</resources>
