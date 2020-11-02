@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.marketkurly">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".src.ApplicationClass"
@@ -17,6 +16,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="n">
+        <activity android:name=".src.login.LoginActivity"></activity>
         <activity
             android:name=".src.splash.SplashActivity"
             android:screenOrientation="portrait"
@@ -27,9 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".src.main.MainActivity">
-
-        </activity>
+        <activity android:name=".src.main.MainActivity"></activity>
     </application>
 
 </manifest>

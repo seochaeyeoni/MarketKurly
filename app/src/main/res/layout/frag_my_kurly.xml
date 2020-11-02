@@ -26,82 +26,301 @@
             android:textColor="@color/main_text"
             android:textSize="18sp"
             android:layout_marginTop="20dp"/>
-        <Button
-            android:layout_width="200dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="105dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:background="#00000000"
-            android:stateListAnimator="@null">
-            <LinearLayout
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="가입 혜택 보기"
-                    android:textAppearance="@style/MainFontL"
-                    android:textColor="@color/shadow_text"
-                    android:textSize="12sp"/>
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
+            android:clickable="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가입 혜택 보기"
+                android:textAppearance="@style/MainFontL"
+                android:textColor="@color/shadow_text"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
 
-            </LinearLayout>
-        </Button>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <Button
+            android:id="@+id/mykurly_btn"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/btn_purple"
             android:stateListAnimator="@null"
             android:text="로그인/회원가입"
             android:textStyle="bold"
             android:textAppearance="@style/MainFontM"
-            android:textSize="15sp"
+            android:textSize="16sp"
             android:textColor="#fff"
             android:layout_marginTop="15dp"/>
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/mykurly_signup_page"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:background="#00000000"
-                android:stateListAnimator="@null">
-                <LinearLayout
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="가입 혜택 보기"
-                        android:textAppearance="@style/MainFontL"
-                        android:textColor="@color/shadow_text"
-                        android:textSize="12sp"/>
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               android:paddingVertical="10dp"
+                android:paddingLeft="20dp"
+                android:clickable="true"
+                android:background="#fff">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="비회원 주문 조회"
+                    android:textAppearance="@style/MainFontL"
+                    android:textColor="@color/main_text"
+                    android:textSize="14sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/arrow_icon"
+                    android:scaleType="centerInside"
+                    android:background="#00000000"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp"
+                android:clickable="true"
+                android:background="#fff"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="배송 안내"
+                    android:textAppearance="@style/MainFontL"
+                    android:textColor="@color/main_text"
+                    android:textSize="14sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/arrow_icon"
+                    android:scaleType="centerInside"
+                    android:background="#00000000"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp"
+                android:clickable="true"
+                android:background="@drawable/linear_box">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="공지사항"
+                    android:textAppearance="@style/MainFontL"
+                    android:textColor="@color/main_text"
+                    android:textSize="14sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/arrow_icon"
+                    android:scaleType="centerInside"
+                    android:background="#00000000"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp"
+                android:clickable="true"
+                android:background="@drawable/linear_box">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="자주하는 질문"
+                    android:textAppearance="@style/MainFontL"
+                    android:textColor="@color/main_text"
+                    android:textSize="14sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/arrow_icon"
+                    android:scaleType="centerInside"
+                    android:background="#00000000"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp"
+                android:clickable="true"
+                android:background="@drawable/linear_box">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="고객센터"
+                    android:textAppearance="@style/MainFontL"
+                    android:textColor="@color/main_text"
+                    android:textSize="14sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/arrow_icon"
+                    android:scaleType="centerInside"
+                    android:background="#00000000"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp"
+                android:clickable="true"
+                android:background="@drawable/linear_box">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="이용안내"
+                    android:textAppearance="@style/MainFontL"
+                    android:textColor="@color/main_text"
+                    android:textSize="14sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/arrow_icon"
+                    android:scaleType="centerInside"
+                    android:background="#00000000"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp"
+                android:clickable="true"
+                android:background="@drawable/linear_box">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="컬리소개"
+                    android:textAppearance="@style/MainFontL"
+                    android:textColor="@color/main_text"
+                    android:textSize="14sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/arrow_icon"
+                    android:scaleType="centerInside"
+                    android:background="#00000000"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:paddingLeft="20dp"
+                android:clickable="true"
+                android:background="@drawable/linear_box"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="알림설정"
+                    android:textAppearance="@style/MainFontL"
+                    android:textColor="@color/main_text"
+                    android:textSize="14sp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/arrow_icon"
+                    android:scaleType="centerInside"
+                    android:background="#00000000"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
 
-                </LinearLayout>
-            </Button>
         </LinearLayout>
     </ScrollView>
 
