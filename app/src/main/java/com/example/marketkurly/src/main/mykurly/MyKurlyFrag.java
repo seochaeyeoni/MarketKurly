@@ -25,6 +25,7 @@ public class MyKurlyFrag extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.frag_my_kurly, container, false);
 
+        //로그인/회원가입 버튼 클릭시 로그인 액티비티로 이동
         Button button = (Button) view.findViewById(R.id.mykurly_btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
