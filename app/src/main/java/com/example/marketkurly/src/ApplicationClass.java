@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.example.marketkurly.config.XAccessTokenInterceptor;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
@@ -19,9 +21,11 @@ public class ApplicationClass extends Application {
     public static MediaType MEDIA_TYPE_JSON = MediaType.parse("application/json; charset=uft-8");
     public static MediaType MEDIA_TYPE_JPEG = MediaType.parse("image/jpeg");
 
-    // 서버 주소6
-    public static String BASE_URL = "mymarketcurly.shop";
+    // 서버 주소
+    public static String BASE_URL = "https://mymarketcurly.shop/"; //"https://kanquk.shop/";
 
+
+    // SharedPreferences
     public static SharedPreferences sSharedPreferences = null;
 
     // SharedPreferences 키 값
@@ -47,6 +51,9 @@ public class ApplicationClass extends Application {
 
     public static Retrofit getRetrofit() {
         if (retrofit == null) {
+            Gson gson = new GsonBuilder()
+                    .setLenient()
+                    .create();
             OkHttpClient client = new OkHttpClient.Builder()
                     .readTimeout(5000, TimeUnit.MILLISECONDS)
                     .connectTimeout(5000, TimeUnit.MILLISECONDS)
@@ -56,7 +63,7 @@ public class ApplicationClass extends Application {
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
                     .client(client)
-                    .addConverterFactory(GsonConverterFactory.create())
+                    .addConverterFactory(GsonConverterFactory.create(gson))
                     .build();
         }
 

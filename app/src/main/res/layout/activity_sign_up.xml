@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,7 +21,7 @@
             android:text="회원가입"
             android:textAppearance="@style/MainFontM"
             android:textColor="@color/main_text"
-            android:textSize="17sp" />
+            android:textSize="16sp" />
     </androidx.appcompat.widget.Toolbar>
 
     <View
@@ -66,7 +67,7 @@
                         android:text="아이디"
                         android:textAppearance="@style/MainFontL"
                         android:textColor="@color/main_text"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -77,7 +78,7 @@
                         android:text="*"
                         android:textAppearance="@style/MainFontL"
                         android:textColor="@color/star_color"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -98,9 +99,11 @@
                         android:hint="예 : marketkurly12"
                         android:textColorHint="@color/edit_text_hint"
                         android:textCursorDrawable="@drawable/signup_cursor"
-                        android:textSize="16sp" />
+                        android:textSize="14sp"
+                        android:maxLength="16"/>
 
                     <Button
+                        android:id="@+id/sign_up_id_btn"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -109,7 +112,7 @@
                         android:text="중복확인"
                         android:textAppearance="@style/MainFontL"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="15sp"
+                        android:textSize="13sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -131,7 +134,7 @@
                         android:text="•"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/shadow_text"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
 
                     <TextView
                         android:id="@+id/sign_up_id_1_tv"
@@ -143,7 +146,7 @@
                         android:text="6자 이상의 영문 혹은 영문과 숫자를 조합"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/shadow_text"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -164,7 +167,7 @@
                         android:text="•"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/shadow_text"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
 
                     <TextView
                         android:id="@+id/sign_up_id_2_tv"
@@ -176,7 +179,7 @@
                         android:text="아이디 중복확인"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/shadow_text"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
 
@@ -195,7 +198,7 @@
                         android:text="비밀번호"
                         android:textAppearance="@style/MainFontL"
                         android:textColor="@color/main_text"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -206,7 +209,7 @@
                         android:text="*"
                         android:textAppearance="@style/MainFontL"
                         android:textColor="@color/star_color"
-                        android:textSize="14sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -219,7 +222,9 @@
                     android:hint="비밀번호를 입력해주세요"
                     android:textColorHint="@color/edit_text_hint"
                     android:textCursorDrawable="@drawable/signup_cursor"
-                    android:textSize="16sp" />
+                    android:textSize="14sp"
+                    android:inputType="textPassword"
+                    android:maxLength="16"/>
 
                 <LinearLayout
                     android:id="@+id/sign_up_pw_1"
@@ -239,7 +244,7 @@
                         android:text="•"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/shadow_text"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
 
                     <TextView
                         android:id="@+id/sign_up_pw_1_tv"
@@ -251,7 +256,7 @@
                         android:text="10자 이상 입력"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/shadow_text"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -272,7 +277,7 @@
                         android:text="•"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/shadow_text"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
 
                     <TextView
                         android:id="@+id/sign_up_pw_2_tv"
@@ -284,7 +289,7 @@
                         android:text="영문/숫자/특수문자(공백 제외)만 허용하며, 2개 이상 조합"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/shadow_text"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -305,7 +310,7 @@
                         android:text="•"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/shadow_text"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
 
                     <TextView
                         android:id="@+id/sign_up_pw_3_tv"
@@ -317,7 +322,7 @@
                         android:text="동일한 숫자 3개 이상 연속 사용 불가"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/shadow_text"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -333,9 +338,10 @@
                         android:layout_gravity="left"
                         android:gravity="center"
                         android:text="비밀번호 확인"
-                        android:textAppearance="@style/MainFontM"
+                        android:textAppearance="@style/MainFontL"
                         android:textColor="@color/main_text"
-                        android:textSize="14sp" />
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -343,9 +349,10 @@
                         android:layout_gravity="left"
                         android:gravity="center"
                         android:text="*"
-                        android:textAppearance="@style/MainFontM"
-                        android:textColor="@color/star_color"
-                        android:textSize="14sp" />
+                        android:textAppearance="@style/MainFontL"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/star_color" />
                 </LinearLayout>
 
                 <EditText
@@ -357,7 +364,9 @@
                     android:hint="비밀번호를 한번 더 입력해주세요"
                     android:textColorHint="@color/edit_text_hint"
                     android:textCursorDrawable="@drawable/signup_cursor"
-                    android:textSize="16sp" />
+                    android:textSize="14sp"
+                    android:inputType="textPassword"
+                    android:maxLength="16"/>
 
                 <LinearLayout
                     android:id="@+id/sign_up_pw_check_1"
@@ -377,7 +386,7 @@
                         android:text="•"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/shadow_text"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
 
                     <TextView
                         android:id="@+id/sign_up_pw_check_1_tv"
@@ -386,10 +395,10 @@
                         android:layout_gravity="left"
                         android:layout_marginBottom="5dp"
                         android:gravity="center"
-                        android:text="10자 이상 입력"
+                        android:text="동일한 비밀번호를 입력해주세요"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/shadow_text"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -405,9 +414,10 @@
                         android:layout_gravity="left"
                         android:gravity="center"
                         android:text="이름"
-                        android:textAppearance="@style/MainFontM"
+                        android:textAppearance="@style/MainFontL"
                         android:textColor="@color/main_text"
-                        android:textSize="14sp" />
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -415,9 +425,10 @@
                         android:layout_gravity="left"
                         android:gravity="center"
                         android:text="*"
-                        android:textAppearance="@style/MainFontM"
+                        android:textAppearance="@style/MainFontL"
                         android:textColor="@color/star_color"
-                        android:textSize="14sp" />
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <EditText
@@ -429,7 +440,8 @@
                     android:hint="이름을 입력해주세요"
                     android:textColorHint="@color/edit_text_hint"
                     android:textCursorDrawable="@drawable/signup_cursor"
-                    android:textSize="16sp" />
+                    android:textSize="14sp"
+                    android:maxLength="10"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -443,9 +455,10 @@
                         android:layout_gravity="left"
                         android:gravity="center"
                         android:text="이메일"
-                        android:textAppearance="@style/MainFontM"
+                        android:textAppearance="@style/MainFontL"
                         android:textColor="@color/main_text"
-                        android:textSize="14sp" />
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -453,9 +466,10 @@
                         android:layout_gravity="left"
                         android:gravity="center"
                         android:text="*"
-                        android:textAppearance="@style/MainFontM"
+                        android:textAppearance="@style/MainFontL"
                         android:textColor="@color/star_color"
-                        android:textSize="14sp" />
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <EditText
@@ -467,7 +481,7 @@
                     android:hint="예 : marketkurly@kurly.com"
                     android:textColorHint="@color/edit_text_hint"
                     android:textCursorDrawable="@drawable/signup_cursor"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -481,9 +495,10 @@
                         android:layout_gravity="left"
                         android:gravity="center"
                         android:text="휴대폰"
-                        android:textAppearance="@style/MainFontM"
+                        android:textAppearance="@style/MainFontL"
                         android:textColor="@color/main_text"
-                        android:textSize="14sp" />
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -491,9 +506,10 @@
                         android:layout_gravity="left"
                         android:gravity="center"
                         android:text="*"
-                        android:textAppearance="@style/MainFontM"
+                        android:textAppearance="@style/MainFontL"
                         android:textColor="@color/star_color"
-                        android:textSize="14sp" />
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -513,7 +529,10 @@
                         android:hint="숫자만 입력해주세요"
                         android:textColorHint="@color/edit_text_hint"
                         android:textCursorDrawable="@drawable/signup_cursor"
-                        android:textSize="16sp" />
+                        android:textSize="14sp"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        android:digits="0123456789"/>
 
                     <Button
                         android:layout_width="0dp"
@@ -524,7 +543,7 @@
                         android:text="인증번호 받기"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/edit_text_hint"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -539,9 +558,10 @@
                         android:layout_gravity="left"
                         android:gravity="center"
                         android:text="주소"
-                        android:textAppearance="@style/MainFontM"
+                        android:textAppearance="@style/MainFontL"
                         android:textColor="@color/main_text"
-                        android:textSize="14sp" />
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -549,17 +569,38 @@
                         android:layout_gravity="left"
                         android:gravity="center"
                         android:text="*"
-                        android:textAppearance="@style/MainFontM"
+                        android:textAppearance="@style/MainFontL"
                         android:textColor="@color/star_color"
-                        android:textSize="14sp" />
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <LinearLayout
+                    android:id="@+id/sign_up_search_address"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/signup_edittext"
+                    android:orientation="horizontal"
                     android:clickable="true">
+
+
+                    <TextView
+                        android:id="@+id/sign_up_address"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:layout_marginRight="20dp"
+                        android:hint="도로명, 지번, 건물명 검색"
+                        android:textCursorDrawable="@drawable/signup_cursor"
+                        android:textColorHint="@color/edit_text_hint"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
                         android:layout_width="30dp"
@@ -569,18 +610,19 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="left"
-                        android:hint="도로명, 지번, 건물명 검색"
-                        android:textColorHint="@color/edit_text_hint"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                <EditText
+                    android:id="@+id/sign_up_address_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/signup_edittext"
+                    android:hint="나머지 주소를 입력해주세요"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textCursorDrawable="@drawable/signup_cursor"
+                    android:textSize="14sp"
+                    android:visibility="gone"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -592,7 +634,7 @@
                     android:text="배송지에 따라 상품 정보가 달라질 수 있습니다."
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/shadow_text"
-                    android:textSize="12sp" />
+                    android:textSize="10sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -601,9 +643,10 @@
                     android:layout_marginBottom="5dp"
                     android:gravity="center"
                     android:text="생년월일"
-                    android:textAppearance="@style/MainFontM"
+                    android:textAppearance="@style/MainFontL"
                     android:textColor="@color/main_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -623,7 +666,10 @@
                         android:hint="YYYY"
                         android:textColorHint="@color/edit_text_hint"
                         android:textCursorDrawable="@drawable/signup_cursor"
-                        android:textSize="16sp" />
+                        android:textSize="14sp"
+                        android:maxLength="4"
+                        android:inputType="number"
+                        android:digits="0123456789"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -632,7 +678,7 @@
                         android:text="/"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/edit_text_hint"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <EditText
                         android:id="@+id/sign_up_birth_mm"
@@ -645,7 +691,10 @@
                         android:hint="MM"
                         android:textColorHint="@color/edit_text_hint"
                         android:textCursorDrawable="@drawable/signup_cursor"
-                        android:textSize="16sp" />
+                        android:textSize="14sp"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:digits="0123456789"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -654,7 +703,7 @@
                         android:text="/"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/edit_text_hint"
-                        android:textSize="20sp" />
+                        android:textSize="16sp" />
 
                     <EditText
                         android:id="@+id/sign_up_birth_dd"
@@ -667,7 +716,10 @@
                         android:hint="DD"
                         android:textColorHint="@color/edit_text_hint"
                         android:textCursorDrawable="@drawable/signup_cursor"
-                        android:textSize="16sp" />
+                        android:textSize="14sp"
+                        android:maxLength="2"
+                        android:inputType="number"
+                        android:digits="0123456789"/>
                 </LinearLayout>
 
 
@@ -678,89 +730,84 @@
                     android:layout_marginBottom="20dp"
                     android:gravity="center"
                     android:text="성별"
-                    android:textAppearance="@style/MainFontM"
+                    android:textAppearance="@style/MainFontL"
                     android:textColor="@color/main_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
 
                 <LinearLayout
                     android:id="@+id/sign_up_man"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:paddingVertical="10dp"
                     android:clickable="true"
                     android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/sign_up_rb_1"
+                    <ImageView
+                        android:id="@+id/sign_up_gender_1"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:background="@drawable/radio_round"
-                        android:button="@null" />
+                        android:background="@drawable/radio_round"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
-                        android:layout_marginBottom="5dp"
-                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
                         android:text="남자"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/main_text"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/sign_up_woman"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:paddingVertical="10dp"
                     android:clickable="true"
                     android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/sign_up_rb_2"
+                    <ImageView
+                        android:id="@+id/sign_up_gender_2"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:background="@drawable/radio_round"
-                        android:button="@null" />
+                        android:background="@drawable/radio_round" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
-                        android:layout_marginBottom="5dp"
-                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
                         android:text="여자"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/main_text"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/sign_up_no_gender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:paddingVertical="10dp"
                     android:clickable="true"
                     android:orientation="horizontal">
 
-                    <RadioButton
-                        android:id="@+id/sign_up_rb_3"
+                    <ImageView
+                        android:id="@+id/sign_up_gender_3"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:background="@drawable/radio_round"
-                        android:button="@null" />
+                        android:background="@drawable/radio_round"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
-                        android:layout_marginBottom="5dp"
-                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
                         android:text="선택안함"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/main_text"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
 
@@ -768,25 +815,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginBottom="7dp"
                     android:gravity="center"
                     android:text="추가 입력 사항"
-                    android:textAppearance="@style/MainFontM"
+                    android:textAppearance="@style/MainFontL"
                     android:textColor="@color/main_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:layout_marginBottom="13dp"
+                    android:layout_marginBottom="15dp"
                     android:gravity="center"
-                    android:paddingBottom="15dp"
                     android:text="추천인 아이디와 참여 이벤트명 중 하나만 선택 가능합니다."
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/shadow_text"
-                    android:textSize="12sp" />
+                    android:textSize="10sp" />
 
 
                 <LinearLayout
@@ -794,74 +841,69 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:paddingVertical="10dp"
                     android:clickable="true">
 
-                    <RadioButton
-                        android:id="@+id/sign_up_rb_4"
+                    <ImageView
+                        android:id="@+id/sign_up_option_1"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:background="@drawable/radio_round"
-                        android:button="@null" />
+                        android:background="@drawable/radio_round" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
-                        android:layout_marginBottom="5dp"
-                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
                         android:text="추천인 아이디"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/main_text"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
                 <EditText
                     android:visibility="gone"
                     android:id="@+id/sign_up_option_id_edit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:background="@drawable/signup_edittext"
                     android:hint="추천인 아이디를 입력해주세요"
                     android:textColorHint="@color/edit_text_hint"
                     android:textCursorDrawable="@drawable/signup_cursor"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:id="@+id/sign_up_option_event"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="20dp">
+                    android:paddingVertical="10dp">
 
-                    <RadioButton
-                        android:id="@+id/sign_up_rb_5"
+                    <ImageView
+                        android:id="@+id/sign_up_option_2"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:background="@drawable/radio_round"
-                        android:button="@null" />
+                        android:background="@drawable/radio_round" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
-                        android:layout_marginBottom="5dp"
-                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
                         android:text="참여 이벤트명"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/main_text"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
                 <EditText
                     android:visibility="gone"
                     android:id="@+id/sign_up_option_event_edit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:background="@drawable/signup_edittext"
                     android:hint="참여 이벤트명을 입력해주세요"
                     android:textColorHint="@color/edit_text_hint"
                     android:textCursorDrawable="@drawable/signup_cursor"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -880,7 +922,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="10dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -889,9 +931,10 @@
                         android:layout_gravity="left"
                         android:gravity="center"
                         android:text="이용약관동의"
-                        android:textAppearance="@style/MainFontM"
+                        android:textAppearance="@style/MainFontL"
                         android:textColor="@color/main_text"
-                        android:textSize="14sp" />
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -902,24 +945,22 @@
                         android:text="*"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/star_color"
-                        android:textSize="14sp" />
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/sign_up_consent_all"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
+                    android:paddingVertical="5dp"
                     android:clickable="true"
                     android:orientation="horizontal">
 
-                    <ToggleButton
-                        android:id="@+id/sign_up_tg_all"
+                    <ImageView
+                        android:id="@+id/sign_up_check_all"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:background="@drawable/check_unchecked"
-                        android:textOn=""
-                        android:textOff=""/>
+                        android:background="@drawable/check_unchecked" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -928,9 +969,9 @@
                         android:layout_marginLeft="15dp"
                         android:gravity="center"
                         android:text="전체 동의합니다."
-                        android:textAppearance="@style/MainFontM"
+                        android:textAppearance="@style/MainFontL"
                         android:textColor="@color/main_text"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -943,7 +984,7 @@
                     android:text="선택 항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다."
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/shadow_text"
-                    android:textSize="13.5sp" />
+                    android:textSize="11.5sp" />
 
                 <View
                     android:layout_width="match_parent"
@@ -956,17 +997,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginBottom="15dp"
+                android:paddingVertical="7dp"
                 android:clickable="true"
                 android:orientation="horizontal">
 
-                <ToggleButton
-                    android:id="@+id/sign_up_tg_1"
+                <ImageView
+                    android:id="@+id/sign_up_check_1"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:background="@drawable/check_unchecked"
-                    android:textOn=""
-                    android:textOff=""/>
+                    android:background="@drawable/check_unchecked" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -977,7 +1016,7 @@
                     android:text="이용약관동의"
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/main_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -988,7 +1027,7 @@
                     android:text="(필수)"
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/shadow_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <View
                     android:layout_width="0dp"
@@ -1010,17 +1049,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginBottom="15dp"
+                android:paddingVertical="7dp"
                 android:clickable="true"
                 android:orientation="horizontal">
 
-                <ToggleButton
-                    android:id="@+id/sign_up_tg_2"
+                <ImageView
+                    android:id="@+id/sign_up_check_2"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:background="@drawable/check_unchecked"
-                    android:textOn=""
-                    android:textOff=""/>
+                    android:background="@drawable/check_unchecked"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1031,7 +1068,7 @@
                     android:text="개인정보처리방침 동의"
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/main_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1042,7 +1079,7 @@
                     android:text="(필수)"
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/shadow_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <View
                     android:layout_width="0dp"
@@ -1064,17 +1101,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginBottom="15dp"
+                android:paddingVertical="7dp"
                 android:clickable="true"
                 android:orientation="horizontal">
 
-                <ToggleButton
-                    android:id="@+id/sign_up_tg_3"
+                <ImageView
+                    android:id="@+id/sign_up_check_3"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:background="@drawable/check_unchecked"
-                    android:textOn=""
-                    android:textOff=""/>
+                    android:background="@drawable/check_unchecked" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1085,7 +1120,7 @@
                     android:text="개인정보처리방침 동의"
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/main_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1096,7 +1131,7 @@
                     android:text="(선택)"
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/shadow_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <View
                     android:layout_width="0dp"
@@ -1118,17 +1153,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginBottom="15dp"
+                android:paddingVertical="7dp"
                 android:clickable="true"
                 android:orientation="horizontal">
 
-                <ToggleButton
-                    android:id="@+id/sign_up_tg_4"
+                <ImageView
+                    android:id="@+id/sign_up_check_4"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:background="@drawable/check_unchecked"
-                    android:textOn=""
-                    android:textOff=""/>
+                    android:background="@drawable/check_unchecked" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1139,7 +1172,7 @@
                     android:text="무료배송, 할인쿠폰 등 혜택/정보 수신 동의"
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/main_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1150,7 +1183,7 @@
                     android:text="(선택)"
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/shadow_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -1170,13 +1203,11 @@
                     android:clickable="true"
                     android:orientation="horizontal">
 
-                    <ToggleButton
-                        android:id="@+id/sign_up_tg_5"
+                    <ImageView
+                        android:id="@+id/sign_up_check_5"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:background="@drawable/check_unchecked"
-                        android:textOn=""
-                        android:textOff=""/>
+                        android:background="@drawable/check_unchecked" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -1187,7 +1218,7 @@
                         android:text="SMS"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/main_text"
-                        android:textSize="14sp" />
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -1198,13 +1229,11 @@
                     android:clickable="true"
                     android:orientation="horizontal">
 
-                    <ToggleButton
-                        android:id="@+id/sign_up_tg_6"
+                    <ImageView
+                        android:id="@+id/sign_up_check_6"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:background="@drawable/check_unchecked"
-                        android:textOn=""
-                        android:textOff=""/>
+                        android:background="@drawable/check_unchecked" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -1215,7 +1244,7 @@
                         android:text="이메일"
                         android:textAppearance="@style/MainFontM"
                         android:textColor="@color/main_text"
-                        android:textSize="14sp" />
+                        android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -1231,17 +1260,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginBottom="15dp"
+                android:paddingVertical="7dp"
                 android:clickable="true"
                 android:orientation="horizontal">
 
-                <ToggleButton
-                    android:id="@+id/sign_up_tg_7"
+                <ImageView
+                    android:id="@+id/sign_up_check_7"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:background="@drawable/check_unchecked"
-                    android:textOn=""
-                    android:textOff=""/>
+                    android:background="@drawable/check_unchecked" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1252,7 +1279,7 @@
                     android:text="본인은 만 14세 이상입니다."
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/main_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -1263,7 +1290,7 @@
                     android:text="(필수)"
                     android:textAppearance="@style/MainFontM"
                     android:textColor="@color/shadow_text"
-                    android:textSize="14sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <Button
@@ -1275,10 +1302,10 @@
                 android:layout_marginVertical="15dp"
                 android:background="@drawable/btn_purple"
                 android:stateListAnimator="@null"
-                android:text="로그인/회원가입"
+                android:text="가입하기"
                 android:textAppearance="@style/MainFontM"
                 android:textColor="#fff"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
 

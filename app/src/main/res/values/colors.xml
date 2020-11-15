@@ -9,4 +9,5 @@
     <color name="background_color">#f4f4f4</color>
     <color name="star_color">#f0697a</color>
     <color name="edit_text_hint">#dddddd</color>
+    <color name="red">#F44336</color>
 </resources>

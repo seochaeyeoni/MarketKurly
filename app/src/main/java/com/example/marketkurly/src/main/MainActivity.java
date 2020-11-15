@@ -14,17 +14,21 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.example.marketkurly.R;
 import com.example.marketkurly.src.BaseActivity;
+import com.example.marketkurly.src.basket.BasketActivity;
 import com.example.marketkurly.src.main.category.CategoryFrag;
 import com.example.marketkurly.src.main.home.HomeFrag;
 import com.example.marketkurly.src.main.interfaces.MainActivityView;
 import com.example.marketkurly.src.main.mykurly.MyKurlyFrag;
 import com.example.marketkurly.src.main.recommend.RecommendFrag;
 import com.example.marketkurly.src.main.search.SearchFrag;
+import com.example.marketkurly.src.pay.PayActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends BaseActivity implements MainActivityView {
@@ -34,14 +38,20 @@ public class MainActivity extends BaseActivity implements MainActivityView {
     private FragmentManager fm;
     private FragmentTransaction ft;
 
-    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        intent = getIntent();
+        ImageButton button = findViewById(R.id.toolbar_shopping_basket);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), BasketActivity.class);
+                startActivity(intent);//액티비티 띄우기
+            }
+        });
 
         final Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -91,6 +101,7 @@ public class MainActivity extends BaseActivity implements MainActivityView {
                         active[0] = frag2;
                         toolbar.findViewById(R.id.toolbar_logo).setVisibility(View.INVISIBLE);
                         toolbar_title.setText("추천");
+                        toolbar.findViewById(R.id.toolbar_title).setVisibility(View.VISIBLE);
                         menu.findItem(R.id.main_home).setIcon(R.drawable.home_unselected);
                         menu.findItem(R.id.main_recommend).setIcon(R.drawable.recommend_selected);    // 선택한 이미지 변경
                         menu.findItem(R.id.main_category).setIcon(R.drawable.category_unselected);
@@ -102,6 +113,7 @@ public class MainActivity extends BaseActivity implements MainActivityView {
                         active[0] = frag3;
                         toolbar.findViewById(R.id.toolbar_logo).setVisibility(View.INVISIBLE);
                         toolbar_title.setText("카테고리");
+                        toolbar.findViewById(R.id.toolbar_title).setVisibility(View.VISIBLE);
                         menu.findItem(R.id.main_home).setIcon(R.drawable.home_unselected);
                         menu.findItem(R.id.main_recommend).setIcon(R.drawable.recommend_unselected);
                         menu.findItem(R.id.main_category).setIcon(R.drawable.category_selected);    // 선택한 이미지 변경
@@ -113,6 +125,7 @@ public class MainActivity extends BaseActivity implements MainActivityView {
                         active[0] = frag4;
                         toolbar.findViewById(R.id.toolbar_logo).setVisibility(View.INVISIBLE);
                         toolbar_title.setText("검색");
+                        toolbar.findViewById(R.id.toolbar_title).setVisibility(View.VISIBLE);
                         menu.findItem(R.id.main_home).setIcon(R.drawable.home_unselected);
                         menu.findItem(R.id.main_recommend).setIcon(R.drawable.recommend_unselected);
                         menu.findItem(R.id.main_category).setIcon(R.drawable.category_unselected);
@@ -124,6 +137,7 @@ public class MainActivity extends BaseActivity implements MainActivityView {
                         active[0] = frag5;
                         toolbar.findViewById(R.id.toolbar_logo).setVisibility(View.INVISIBLE);
                         toolbar_title.setText("마이컬리");
+                        toolbar.findViewById(R.id.toolbar_title).setVisibility(View.VISIBLE);
                         menu.findItem(R.id.main_home).setIcon(R.drawable.home_unselected);
                         menu.findItem(R.id.main_recommend).setIcon(R.drawable.recommend_unselected);
                         menu.findItem(R.id.main_category).setIcon(R.drawable.category_unselected);
@@ -134,6 +148,15 @@ public class MainActivity extends BaseActivity implements MainActivityView {
                 return false;
             }
         });
+
+        //SplashActivity 의 인텐트를 받아서 저장
+        Intent intent = getIntent();
+        boolean isUser = intent.getBooleanExtra("isUser", false);
+        //번들객체 생성, text값 저장
+        Bundle bundle = new Bundle();
+        bundle.putBoolean("isUser", isUser);
+        //MyKurlyFrag 로 번들 전달
+        frag5.setArguments(bundle);
 
 
     }

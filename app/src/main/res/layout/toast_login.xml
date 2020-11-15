@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:background="@drawable/box_red"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="17dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="170dp"
+        android:text="아이디, 비밀번호를 확인해주세요"
+        android:textAppearance="@style/MainFontM"
+        android:textColor="#b4130b"
+        android:textSize="15sp" />
+</LinearLayout>

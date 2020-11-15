@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="95dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#fff">
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:src="@drawable/quotation_mark"/>
+    <TextView
+        android:id="@+id/view_flipper_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="3dp"
+        android:text="후기"
+        android:textAppearance="@style/ContentFontM"
+        android:textColor="@color/main_text"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/view_flipper_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="3dp"
+        android:text="이름"
+        android:textAppearance="@style/ContentFontL"
+        android:textColor="@color/shadow_text"
+        android:textSize="10sp" />
+
+</LinearLayout>

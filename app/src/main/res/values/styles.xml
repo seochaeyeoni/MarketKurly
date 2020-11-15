@@ -4,7 +4,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
     </style>
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_background</item>
@@ -16,13 +16,34 @@
     <style name="MainFontM" parent="android:Widget.TextView">
         <item name="android:fontFamily">@font/rixgom</item>
     </style>
+    <style name="ContentFontL" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/malgun</item>
+    </style>
+    <style name="ContentFontM" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/malgunbd</item>
+    </style>
+    <style name="bottom_text" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/rixgom</item>
+        <item name="android:textSize">10sp</item>
+    </style>
     <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
         <item name="android:fontFamily">@font/rixgom</item>
-        <item name="android:textSize">17sp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="tab_text_small" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/rixgom</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle"></item>
+    </style>
+    <style name="tab_text_selected" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/rixgom</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <style name="toolbar_text" parent="@android:style/TextAppearance.Widget.TabWidget">
         <item name="android:fontFamily">@font/rixgom</item>
-        <item name="android:textSize">17sp</item>
+        <item name="android:textSize">15sp</item>
     </style>
 
 </resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:paddingTop="10dp"
+    android:paddingHorizontal="10dp"
+    android:orientation="vertical"
+    android:background="#fff">
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="상품명"
+        android:textAppearance="@style/MainFontM"
+        android:textColor="@color/main_text"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/iv_product"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_product_price_before"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이전가격"
+            android:textAppearance="@style/ContentFontL"
+            android:textColor="@color/edit_text_hint"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="가격"
+            android:textAppearance="@style/ContentFontM"
+            android:textColor="@color/main_text"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <ImageView
+                android:id="@+id/select_btn"
+                android:layout_width="100dp"
+                android:layout_height="32dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/plus_minus"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+            <Button
+                android:id="@+id/minus_count_btn"
+                android:visibility="visible"
+                android:background="#00000000"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:layout_constraintTop_toTopOf="@id/select_btn"
+                app:layout_constraintLeft_toLeftOf="@id/select_btn"/>
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textAppearance="@style/ContentFontL"
+                android:textColor="@color/main_text"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/select_btn"
+                app:layout_constraintLeft_toLeftOf="@id/select_btn"
+                app:layout_constraintRight_toRightOf="@id/select_btn"
+                app:layout_constraintBottom_toBottomOf="@id/select_btn"/>
+            <Button
+                android:id="@+id/plus_count_btn"
+                android:visibility="visible"
+                android:background="#00000000"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:layout_constraintTop_toTopOf="@id/select_btn"
+                app:layout_constraintRight_toRightOf="@id/select_btn"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/linear_line" />
+
+
+
+
+
+</LinearLayout>
